@@ -37,11 +37,26 @@ public class MainActivity extends AppCompatActivity {
         btnSplitM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                String strAmount = etAmountM.getText().toString();
                String strPax = etPaxM.getText().toString();
-               double TotalDiscount = 0.0;
+                String strDiscount = etAmountM.getText().toString();
+               Integer paxInt = Integer.parseInt(strPax);
+               Double amountDouble = Double.parseDouble(strAmount);
+                Double  TotalDiscount = Double.parseDouble(strDiscount);
+
                if(tgSVSM.isChecked()){
-                   TotalDiscount = Double.parseDouble(etAmountM) + 0.1 ;
+                   TotalDiscount = TotalDiscount + 1.1 ;
+               }else if(tgGSTM.isChecked()){
+                   TotalDiscount = TotalDiscount + 1.07 ;
+               }else if(tgSVSM.isChecked() && tgGSTM.isChecked()){
+                   TotalDiscount = TotalDiscount +1.17 ;
+
+               }else{
+                   amountDouble = amountDouble / paxInt;
+
+
                }
 
             }
