@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BillPlease</string>
+    <string name="tvAmount">Amount</string>
+    <string name="etAmount">Enter the bill amount here....</string>
+    <string name="tvPeople">Number of Pax</string>
+    <string name="etPeople">Enter the number of pax here...</string>
+    <string name="tgBtnSVS">SVS</string>
+    <string name="tgBtnGST">GST</string>
+    <string name="tvDiscount">Discount(%)</string>
+    <string name="etDiscount">Enter the discount here.....</string>
+    <string name="tvBill">Total Bill</string>
+    <string name="tvDivided">Each pays </string>
+    <string name="btnSplit">Split</string>
+    <string name="btnReset">Reset</string>
+
+</resources>
